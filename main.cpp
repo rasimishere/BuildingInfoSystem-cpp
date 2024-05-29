@@ -26,5 +26,18 @@ int main() {
     building2.residents.push_back({ 201, 3, 1900.00 });
     building2.residents.push_back({ 222, 2, 1100.00 });
 
+    cout << "Building 1 Address: " << building1.address << endl;
+    cout << "Residents in Building 1:" << endl;
+    for (const auto& resident : building1.residents) {
+        cout << "Room Number: " << resident.roomNumber << ", Number of Residents: " << resident.numberOfResidents << ", Rent: $" << resident.rent << endl;
+    }
+        cout << endl;
+
+    cout << "Building 2 Address: " << building2.address << endl;
+    cout << "Residents in Building 2:" << endl;
+    for (const auto& resident : building2.residents) {
+        cout << "Room Number: " << resident.roomNumber << ", Number of Residents: " << resident.numberOfResidents << ", Rent: $" << resident.rent << endl;
+    }
+
     return 0;
 }
